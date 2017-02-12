@@ -1,0 +1,114 @@
+html body {	
+  background-color: #ccbc9e;
+}
+
+.februaryexpenses {
+  position: relative;
+  font-family: sans-serif;
+  color: #000000;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+}
+
+.title {
+	text-align: center;
+	font-weight: bold;
+	background-color: #87b5b0;
+	position: relative;
+	z-index: 0;
+	height: 48px;
+	margin-bottom: 2em;
+	margin-top: -1em;
+}
+
+button {
+	border: 1px solid #afa78e;
+	background-color: #eae5e1;
+	border-radius: .2em;
+	text-align: center;	
+}
+
+table {
+	padding: 15px;
+	margin-top: 1.5em;
+	color: #000000;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;	
+	border-spacing: 150px;
+	font-size: 0.75em;
+}
+
+td {	
+	border: 5px #eae5e1 solid;
+}
+
+td:not(:first-child) {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:20px; 
+	padding-left: 20px;
+}
+
+#feb {
+	background-color: #87b5b0;
+	font-weight: bold;
+	font-size: 1.75em;
+	padding: 0.5em;
+	border-color: #eae5e1;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.fa {
+	color: #000000;
+	height: 24px;
+	width: 24px;
+	text-align: center;
+}
+
+.glyphicon {
+	color: #000000;
+}
+
+#home {
+	background-color: #87b5b0;
+	position: relative;
+	right: -1em;
+	top: -0.5em;
+	font-size: 1.5em;
+	border-color: #eae5e1;
+}
+
+#monthly {
+  color: #000000;
+  position: relative;
+  right: 2em;
+  border-color: #eae5e1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.arrow {
+  font-size: 1.3em;
+  margin: 0.75em;
+}
+
+tr {
+  margin-top: 1em;
+  margin: 0.5em;
+  width: 3em;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>February Expenses</title>
+	<link rel="stylesheet" type="text/css" href="februaryexpenses.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+  
+<body onload="setTotalSpending();checkBudget();">
+	<div class="title">
+		<h1>
+			View Transaction History
+		</h1>
+	</div>
+	<div class="februaryexpenses">
+		<div class="top">
+			<button id="monthly" onclick="">
+				monthly<br> overview
+			</button>
+			<button id="home">
+				<span class="glyphicon glyphicon-home">
+				</span>
+			</button>
+		</div>
+		<div class="newexpense">		
+			<button id="newexpense" onclick="">
+				+ new expense
+			</button>
+		</div>
+     
+  
+		<table class="expenses">
+			<tr>
+				<td id="feb" colspan="4"> 
+					<button>
+						<span class="glyphicon glyphicon-triangle-left">
+						</span>
+					</button>
+					<span>
+						February
+					</span>
+					<button>
+						<span class="glyphicon glyphicon-triangle-right">
+						</span>
+					</button>
+				</td>					
+			</tr>
+			<tr>
+				<td>
+					<button type="button" data-toggle="modal" data-target="#myModal" onclick = "getValuesOne();setID('one');">
+						<i class="fa">&#xf040;
+						</i>
+					</button>
+				</td>
+				<td class="date" id="one">
+					2/10/2017
+				</td>
+				<td class="money" id="one">
+					34.76
+				</td>
+				<td class="loc" id="one">
+					Books By The Ton
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" data-toggle="modal" data-target="#myModal" onclick="getValuesTwo(); setID('two');">
+						<i class="fa">&#xf040;
+						</i>
+					</button>
+				</td>
+				<td class="date" id="two">
+					2/8/2017
+				</td>
+				<td class="money" id="two">
+					17.68
+				</td>
+				<td class="loc" id="two">
+					Doo Dad Shop
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" data-toggle="modal" data-target="#myModal" onclick="getValuesThree(); setID('three');">
+						<i class="fa">&#xf040;
+						</i>
+					</button>
+				</td>
+				<td class="date" id="three">
+					2/7/2017
+				</td>
+				<td class="money" id="three">
+					10.27
+				</td>
+				<td class="loc" id="three">
+					Sports Shorts
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" data-toggle="modal" data-target="#myModal" onclick="getValuesFour(); setID('four');">
+						<i class="fa">&#xf040;
+						</i>
+					</button>
+				</td>
+				<td class="date" id="four">
+					2/4/2017
+				</td>
+				<td class="money" id="four">
+					25.00
+				</td>
+				<td class="loc" id="four">
+					Scissor Wizard
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="button" data-toggle="modal" data-target="#myModal" onclick="getValuesFive(); setID('five')">
+						<i class="fa">&#xf040;
+						</i>
+					</button>
+				</td>
+				<td class="date" id="five">
+					2/1/2017
+				</td>
+				<td class="money" id="five">
+					6.05
+				</td>
+				<td class="loc" id="five">
+					Pizza King
+				</td>
+			</tr>        
+		</table>
+		<table class="budget-total">
+			<tr>
+				<td>
+					monthly<br>budget
+				</td>
+				<td> 
+					$<input type="number" id="budgetval" value="100.00" min="0" step="0.01" oninput="checkBudget();">					
+				</td>
+				<td>
+					monthly<br>total
+				</td>
+				<td id="monthlytotal">
+				</td>
+			</tr>
+		</table>
+		<!-- Making a Modal Box -->
+		<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>
+						Edit Transaction Information
+					</h2>
+					<button type="button" class="close" data-dismiss="modal">
+						&times;
+					</button>							
+				</div>
+				<div class="modal-body">
+				<form>
+					<p>
+					<span>Date: 
+					</span>
+					<span>
+						<input id="dateinput">
+					</span>
+				</p>
+				<p>
+					<span>Cost:
+					</span>
+					<span>
+						<input id="costinput">
+					</span>
+				</p>
+				<p>
+					<span>Location:
+					</span>
+					<span>
+						<input id="locinput">
+					</span>
+				</p>
+				<div class="modal-footer">
+					<input type="button" name="done" value="Submit" data-dismiss="modal" onclick="changeValues(); setTotalSpending();"/>
+				</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</div>
+    <script src="februaryexpenses.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body> 
+</html>

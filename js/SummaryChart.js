@@ -29,6 +29,7 @@ function drawChart1() {
 			format: 'MMM d',
 			//title: 'Date'},
 			ticks: dateTicks},
+			legend: 'none',
 	};
 
 	var chart = new google.visualization.LineChart(document.getElementById('chart_div'));

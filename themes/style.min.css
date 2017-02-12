@@ -14,7 +14,56 @@
 .center-wrapper * {
   margin: 0 auto;
 }
-
+#monthnav{
+	max-width: 30em;
+}
+#topnav{
+	max-width: 25em;
+	text-align: center;
+	margin: 0 auto;
+}
+#topbtn{
+	max-width: 25em;
+	height: 50px;
+	text-align: center;
+	margin: 15px;
+}
+#mytable{
+	max-width: 27em;
+	text-align: center;
+}
+#table2{
+	max-width: 30em;
+	text-align: center;
+	margin: 15px auto;
+}
+td{
+	max-width: 5em;
+	border: 5px #a0957e solid;
+}
+#mtot{
+	width: 75px;
+}
+#mbud{
+	width: 75px;
+}
+#monthlytotal{
+	width: 75px;
+}
+tr {
+    border: 1px solid gray;
+	border-left: 1px solid gray;
+	text-align: center;
+}
+tr:nth-child(even) {
+    background: #e5d2a9;
+}
+tr:nth-child(odd) {
+    background: #c1b499;
+}
+input{
+	max-width: 10em;
+}
 /* Globals */
 /* Font
 -----------------------------------------------------------------------------------------------------------*/

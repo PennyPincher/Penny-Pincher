@@ -1,39 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile: Theme Download</title>
-	<link rel="stylesheet" href="themes/style.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <meta charset="UTF-8">
+  <title>PennyPincherNew</title>
+  
+  
+  
+      <link rel="stylesheet" href="style.css">
+
+  
+</head>
+
+<body>
+  <html>
+<head>
+<title>PennyPincherNew</title>
 </head>
 <body>
-	<div data-role="page" data-theme="b">
-		<div data-role="header" data-position="inline">
-			<h1>It Worked!</h1>
-		</div>
-		<div data-role="content" data-theme="b">
-			<p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
-			<pre>
-<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/style.min.css&quot; /&gt;</strong>
-<strong>&lt;link rel=&quot;stylesheet&quot; href=&quot;themes/jquery.mobile.icons.min.css&quot; /&gt;</strong>
-&lt;link rel=&quot;stylesheet&quot; href=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css&quot; /&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js&quot;&gt;&lt;/script&gt;
-			</pre>
-			<p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
-			<label for="slider1">Input slider:</label>
-			<input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="b" />
-			<fieldset data-role="controlgroup"  data-type="horizontal" data-role="fieldcontain">
-			<legend>Cache settings:</legend>
-			<input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on" checked="checked" />
-			<label for="radio-choice-a1">On</label>
-			<input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"  />
-			<label for="radio-choice-b1">Off</label>
-			</fieldset>
-		</div>
-	</div>
+<!-- Background is the brownish color that spans the entire page -->
+<div class = "background">
+  
+<!-- Withinbackgroun, there is header which is the top bar that include a left button for budget setting, and a right button for monthly total -->
+<div class = "header">
+<button id = "left">
+       Budget Setting
+<img id = "pencil" src="http://www.pngmart.com/files/1/Green-Pencil-Icon-PNG.png" alt="pencil">
+</button>
+<button id = "right"> Monthly Total:
+<p id = "display">$180.00</p>
+</button>    
+</div>  
+
+<!-- Within background there is also a button for adding new expense, this button will eventually linked to Sara's page -->
+<div class = "button">  
+<a href="link to new expense page">   
+<button class = "newexpense">
+ + Add New Expense
+</button>  
+</a>     
+</div>
+  
+<!-- Within background there are three divs named body, each body div is a link to other group member's page -->
+
+  
+<!-- This should be linked to Avery's page  -->
+<div class = "body">
+  
+<a href="link to transaction history">    
+<img id = "image" src="https://growingyoungereachday.files.wordpress.com/2011/06/pen-and-notebook.jpg" alt="image">
+<a>     
+<p id = "texthistory"> Transaction History</p>
+</div>
+  
+
+<!-- We don't have search function implemented yet  -->  
+<div class = "body">
+    <a href="link to search">  
+<img id = "image" src="http://previews.123rf.com/images/studiom1/studiom11102/studiom1110200559/8840269-FOOD-Magnifying-glass-over-background-with-different-association-terms-Vector-illustration--Stock-Vector.jpg" alt="image">
+  </a> 
+<p id = "textsearch"> Search</p>
+</div>
+ 
+<!-- We don't have setting function implemented yet  -->  
+<div class = "body">
+<a href="link to setting">  
+<img id = "image" src="https://azureq.files.wordpress.com/2012/09/img_84463.jpg" alt="image">  
+</a>    
+<p id = "textsetting">Setting</p>
+</div>  
+   
+
+</div>  
+<!-- this is the end of the background  -->  
+
+  
+</body>
+</html>
+  
+  
 </body>
 </html>

@@ -20,6 +20,9 @@
 		</div>
 		<div data-role="content" data-theme="a">
 		<div class="center-wrapper">
+			<a  href="#new_exp" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top">    
+			New<br> Expense
+			<a>
 			<a  href="#expenses" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-bullets ui-btn-icon-top" onclick="setTotalSpending();" >    
 			History
 			<a>     
@@ -33,6 +36,38 @@
 		</div>
 	</div>
 	
+	<div data-role="page" data-theme="a" id="new_exp">
+	<div data-role="header" data-position="inline">
+			<a href="#home" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-home ui-btn-icon-left">Home</a><h1>New Transaction</h1>
+		</div>
+	<div data-role="content" data-theme="a">
+	
+	<form name="newTran" action="" onsubmit="return validateForm()" method="post"> <!-- This should return Avery's page with the new purchase posted -->
+		<label for="date">Date:</label>
+		<input type="text" id="fname" name="firstname">
+
+		<label for="loc">Location:</label>
+		<input type="text" id="lname" name="lastname">
+		
+		<label for="spent">Amount Spent:</label>
+		<input type="text" id="lname" name="lastname" required>
+		
+		<label for="note">Notes:</label>
+		<input type="text" id="lname" name="lastname">
+		
+		<label for="cat">Category:</label>
+		<select id="cat" name="cat">
+		  <option value="food">Food</option>
+		  <option value="bills">Bills</option>
+		  <option value="ent">Entertainment</option>
+		  <option value="new">Add New Category</option>
+		</select>
+	  
+		<input type="submit" class="ui-btn ui-corner-all ui-shadow" value="Finish">
+	</form>
+	</div>
+	</div>
+	
 	<div data-role="page" data-theme="a" id="expenses">
 		<div data-role="header" data-position="inline">
 			<a href="#home" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-home ui-btn-icon-left">Home</a><h1>Transaction History</h1>
@@ -43,7 +78,7 @@
 				<div class="ui-block-a"><a id="topbtn" href="#chart" class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-top">
 					Monthly<br> Overview
 				</a></div>
-				<div class="ui-block-b"><a id="topbtn" href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top">
+				<div class="ui-block-b"><a id="topbtn" href="#new_exp" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top">
 					New <br>Expense
 				</a></div>
 			</div>
@@ -168,7 +203,7 @@
 							Edit
 						</h1>				
 					</div>
-					<form method="post" action="demoform.asp">
+					<form method="post" action="">
 					<div class="ui-field-contain">
 						<label for="dateinput"><h4>Date:</h4></label>
 						<input type="text" name="dateinput" placeholder="MM/DD/YYYY" id="dateinput" value="">

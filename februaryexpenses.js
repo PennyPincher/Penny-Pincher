@@ -13,7 +13,7 @@ function setTotalSpending() {
 	var sum = 0;
 	// iterate through each td based on class and add the values
 	$(".money").each(function() {
-		var value = $(this).text();
+		var value = $(this).html();
 		// add only if the value is number
 		if(!isNaN(value) && value.length != 0) {
 			sum += parseFloat(value);
@@ -103,6 +103,61 @@ function getValuesFive() {
 	loc.value = oldloc;
 }
 
+function getValuesOne2() {
+	var date = document.getElementById('datein');
+	var olddate = ($("#one.date").html()).trim();
+	date.value = olddate;	
+	var cost = document.getElementById('costin');
+	var oldcost = ($("#one.money").html()).trim();
+	cost.value = oldcost;
+	var loc = document.getElementById('locin');
+	var oldloc = ($("#one.loc").html()).trim();
+	loc.value = oldloc;
+}
+function getValuesTwo2() {
+	var date = document.getElementById('datein');
+	var olddate = ($("#two.date").html());
+	date.value = olddate;	
+	var cost = document.getElementById('costin');
+	var oldcost = ($("#two.money").html());
+	cost.value = oldcost;
+	var loc = document.getElementById('locin');
+	var oldloc = ($("#two.loc").html());
+	loc.value = oldloc;
+}
+function getValuesThree2() {
+	var date = document.getElementById('datein');
+	var olddate = ($("#three.date").html()).trim();
+	date.value = olddate;	
+	var cost = document.getElementById('costin');
+	var oldcost = ($("#three.money").html()).trim();
+	cost.value = oldcost;
+	var loc = document.getElementById('locin');
+	var oldloc = ($("#three.loc").html()).trim();
+	loc.value = oldloc;
+}
+function getValuesFour2() {
+	var date = document.getElementById('datein');
+	var olddate = ($("#four.date").html()).trim();
+	date.value = olddate;	
+	var cost = document.getElementById('costin');
+	var oldcost = ($("#four.money").html()).trim();
+	cost.value = oldcost;
+	var loc = document.getElementById('locin');
+	var oldloc = ($("#four.loc").html()).trim();
+	loc.value = oldloc;
+}
+function getValuesFive2() {
+	var date = document.getElementById('datein');
+	var olddate = ($("#five.date").html()).trim();
+	date.value = olddate;	
+	var cost = document.getElementById('costin');
+	var oldcost = ($("#five.money").html()).trim();
+	cost.value = oldcost;
+	var loc = document.getElementById('locin');
+	var oldloc = ($("#five.loc").html()).trim();
+	loc.value = oldloc;
+}
 
 function changeValues() {
 	if (globalID == "one") {
@@ -157,6 +212,64 @@ function changeValues() {
 		var newcost = cost.value;
 		$("#five.money").html(newcost);
 		var loc = document.getElementById('locinput');
+		var newloc = loc.value;
+		$("#five.loc").html(newloc);
+	}
+}
+
+function changeValues2() {
+	if (globalID == "one") {
+		var date = document.getElementById('datein');
+		var newdate = date.val();
+		$("#one.date").html(newdate);
+		var cost = document.getElementById('costin');
+		var newcost = cost.value;
+		$("#one.money").html(newcost);
+		var loc = document.getElementById('locin');
+		var newloc = loc.value;
+		$("#one.loc").html(newloc);
+	}
+	else if (globalID == "two") {
+		var date = document.getElementById('datein');
+		var newdate = date.val();
+		$("#two.date").html(newdate);
+		var cost = document.getElementById('costin');
+		var newcost = cost.value;
+		$("#two.money").html(newcost);
+		var loc = document.getElementById('locin');
+		var newloc = loc.value;
+		$("#two.loc").html(newloc);
+	}	
+	else if (globalID == "three") {
+		var date = document.getElementById('datein');
+		var newdate = date.value;
+		$("#three.date").html(newdate);
+		var cost = document.getElementById('costin');
+		var newcost = cost.value;
+		$("#three.money").html(newcost);
+		var loc = document.getElementById('locin');
+		var newloc = loc.value;
+		$("#three.loc").html(newloc);
+	}
+	else if (globalID == "four") {
+		var date = document.getElementById('datein');
+		var newdate = date.value;
+		$("#four.date").html(newdate);
+		var cost = document.getElementById('costin');
+		var newcost = cost.value;
+		$("#four.money").html(newcost);
+		var loc = document.getElementById('locin');
+		var newloc = loc.value;
+		$("#four.loc").html(newloc);
+	}
+	else if (globalID == "five") {
+		var date = document.getElementById('datein');
+		var newdate = date.value;
+		$("#five.date").html(newdate);
+		var cost = document.getElementById('costin');
+		var newcost = cost.value;
+		$("#five.money").html(newcost);
+		var loc = document.getElementById('locin');
 		var newloc = loc.value;
 		$("#five.loc").html(newloc);
 	}

@@ -51,7 +51,9 @@
 			 	<p style="text-align:center;">
 					Budget<br>
 				</p>			
-				<div><input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="0.01" size="10" oninput="checkBudget();" >	 </div>
+				<div>
+					<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="0.01" size="10" oninput="checkBudget();" >	 
+				</div>
 			<!--	<button id="bleft">
 					Budget Setting
 					<img id = "pencil" src="http://www.pngmart.com/files/1/Green-Pencil-Icon-PNG.png" alt="pencil"> 	
@@ -67,58 +69,58 @@
 					
 				</button>  
 
-		</div>
+			</div>
 		</div>
 
 
 
 
 		<div data-role="content" data-theme="a">
-		<div class="center-wrapper">
-			<a href="#myPopup"  id = "newexpense" data-rel="popup" data-position-to="window" data-transition="pop" 
-			class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top" onclick = "getValuesOne();setID('one');">
-			New<br> Expense
-			</a>
-			<div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;" data-overlay-theme="b">
-				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-					<div data-role="header" data-theme="a" >
-						<h1>
-							Edit
-						</h1>				
-					</div>
-					<form method="post" action="#expenses">
-					<div class="ui-field-contain">
-						<label for="dateinput"><h4>Date:</h4></label>
-						<input type="text" name="dateinput" placeholder="MM/DD/YYYY" id="dateinput" value="">
-						<label for="costinput"><h4>Cost:</h4></label>
-						<input type="text" name="costinput" id="costinput">
-						<label for="locinput"><h4>Location:</h4></label>
-						<input type="text" name="locinput" id="locinput">
-					</div>
-					<a href="#expenses" class="ui-btn ui-corner-all ui-shadow" data-role="button" onclick="changeValues(); setTotalSpending();">Submit</a>
-					<!-- <input type="submit" class="ui-btn ui-corner-all ui-shadow" name="done" value="Submit" onclick="changeValues(); setTotalSpending();">	 -->
-					</form>
+			<div class="center-wrapper">
+				<a href="#myPopup"  id = "newexpense" data-rel="popup" data-position-to="window" data-transition="pop" 
+				class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-top" onclick = "getValuesOne();setID('one');">
+				New<br> Expense
+				</a>
+				<div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;" data-overlay-theme="b">
+					<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+						<div data-role="header" data-theme="a" >
+							<h1>
+								Edit
+							</h1>				
+						</div>
+						<form method="post" action="#expenses">
+						<div class="ui-field-contain">
+							<label for="dateinput"><h4>Date:</h4></label>
+							<input type="text" name="dateinput" placeholder="MM/DD/YYYY" id="dateinput" value="">
+							<label for="costinput"><h4>Cost:</h4></label>
+							<input type="text" name="costinput" id="costinput">
+							<label for="locinput"><h4>Location:</h4></label>
+							<input type="text" name="locinput" id="locinput">
+						</div>
+						<a href="#expenses" class="ui-btn ui-corner-all ui-shadow" data-role="button" onclick="changeValues(); setTotalSpending();">Submit</a>
+						<!-- <input type="submit" class="ui-btn ui-corner-all ui-shadow" name="done" value="Submit" onclick="changeValues(); setTotalSpending();">	 -->
+						</form>
 					
-					<div data-role="footer"data-theme="a">
-					</div>
+						<div data-role="footer"data-theme="a">
+						</div>
 		
-			</div>
+				</div>
 
 			
-			<a  href="#expenses" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-bullets ui-btn-icon-top" onclick="setTotalSpending();" >    
-			History
-			<a>     
-			<a class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-top" href="link to search">  
-			Search
-			</a>
-			<a class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-top" href="link to setting" > 
-			Settings
-			</a>    
-		<!--</div>-->
+				<a  href="#expenses" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-bullets ui-btn-icon-top" onclick="setTotalSpending();" >    
+					History
+				</a>     
+				<a class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-top" href="link to search">  
+					Search
+				</a>
+				<a class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-top" href="link to setting" > 
+					Settings
+				</a>    
+			</div>
 			<!-- div id="chart_div" class="chart center-wrapper" style="width:100%;" this was what the div code used to look like for the chart--> 
-       <div class = "center-wrapper">  		
-	   		<img class = "center-wrapper" id = "randomchart" src="https://camo.githubusercontent.com/22c2fafa60804cb2bc3f60ff8afe6d5262da3b25/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f7a654d6972636f2f6769746875622f73776966742d6c696e6563686172742f30312e706e67" alt="randomchart">
-		</div> 
+       			<div class = "center-wrapper">  		
+	   			<img class = "center-wrapper" id = "randomchart" src="https://camo.githubusercontent.com/22c2fafa60804cb2bc3f60ff8afe6d5262da3b25/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f7a654d6972636f2f6769746875622f73776966742d6c696e6563686172742f30312e706e67" alt="randomchart">
+			</div> 
 		</div>
 	</div>
 

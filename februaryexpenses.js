@@ -1,12 +1,12 @@
 var editbudget = document.getElementById("editbudget");
 var numel = 5;
 var monthlytotal = document.getElementById("monthlytotal");
-var budgetval = document.getElementById("budgetval");
+//var budgetval = document.getElementById("budgetval");
 
-function changeBudget() {
-	var x = budgetval.value;
-	budgetval.innerHTML = x;
-}
+//function changeBudget() {
+//	var x = budgetval.value;
+//	budgetval.innerHTML = x;
+//}
 
 $("#budgetval1").change(function() {
 	alert('function was called!');

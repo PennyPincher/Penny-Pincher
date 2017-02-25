@@ -12,7 +12,7 @@ $("#budgetval1").change(function() {
 	alert('function was called!');
 	//var me = ($this).val();
 	//$("#budgetval2").val(me);
-}
+});
 	
 //function setBudget1() {
 	//var two = $("#budgetval2").val();

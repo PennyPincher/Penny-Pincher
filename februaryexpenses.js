@@ -8,19 +8,19 @@ var monthlytotal = document.getElementById("monthlytotal");
 //	budgetval.innerHTML = x;
 //}
 
-//$("#budgetval1").change(function() {
-//	alert('function was called!');
+$("#budgetval1").change(function() {
+	alert('function was called!');
 //	//var me = ($this).val();
 //	//$("#budgetval2").val(me);
-//});
+});
 	
-function setBudget1() {
-	alert("function was called!");
+//function setBudget1() {
+//	alert("function was called!");
 	//var two = $("#budgetval2").val();
 	//var two = getElementsByName("budgetval2")[0];
 //	$("#budgetval1").val("900");
 	//one.value(two.value);
-}
+//}
 
 //function setBudget2() {
 //	var one = $("#budgetval1").val();

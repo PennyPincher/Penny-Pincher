@@ -9,9 +9,9 @@ function changeBudget() {
 }
 
 function setBudget1() {
-	var two = $("#budgetval2").val();
+	//var two = $("#budgetval2").val();
 	//var two = getElementsByName("budgetval2")[0];
-	$("#budgetval1").val(two);
+	$("#budgetval1").val("900");
 	//one.value(two.value);
 }
 

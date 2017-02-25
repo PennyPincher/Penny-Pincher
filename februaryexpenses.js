@@ -9,7 +9,7 @@ var monthlytotal = document.getElementById("monthlytotal");
 //}
 	
 function setBudget1() {
-	var two = document.getElementById("budgetval2");
+	var two = document.getElementById("budgetval2").value;
 	document.getElementById("budgetval1").value = two;
 	//alert(two);
 	//var two = getElementsByName("budgetval2")[0];
@@ -18,7 +18,7 @@ function setBudget1() {
 }
 
 function setBudget2() {
-	var one = document.getElementById("budgetval1");
+	var one = document.getElementById("budgetval1").value;
 	document.getElementById("budgetval2").value = one;
 	//var one = getElementsByName("budgetval1")[0];
 //	$("#budgetval2").val(one);

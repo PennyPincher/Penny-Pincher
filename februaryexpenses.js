@@ -9,7 +9,7 @@ function changeBudget() {
 }
 
 $("#budgetval1").change(function() {
-	var me = $(this).val();
+	var me = ($this).val();
 	$("#budgetval2").val(me);
 }
 	

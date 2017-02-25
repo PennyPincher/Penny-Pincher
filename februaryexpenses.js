@@ -45,15 +45,15 @@ function setTotalSpending() {
 }
 
 function checkBudget() {
-	var budget = budgetval.value;
-	var unroundedtotal = parseFloat(monthlytotal.innerHTML);
-	var total = Math.round(unroundedtotal * 100) / 100;
-	if (total > budget) {
-		monthlytotal.style.color = 'red';
-	}
-	else {
-		monthlytotal.style.color = 'green';
-	}
+//	var budget = budgetval.value;
+//	var unroundedtotal = parseFloat(monthlytotal.innerHTML);
+//	var total = Math.round(unroundedtotal * 100) / 100;
+//	if (total > budget) {
+//		monthlytotal.style.color = 'red';
+//	}
+//	else {
+//		monthlytotal.style.color = 'green';
+//	}
 }
 
 

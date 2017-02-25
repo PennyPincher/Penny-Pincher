@@ -7,20 +7,15 @@ var monthlytotal = document.getElementById("monthlytotal");
 //	var x = budgetval.value;
 //	budgetval.innerHTML = x;
 //}
-
-$("#budgetval1").change(function() {
-	alert('function was called!');
-//	//var me = ($this).val();
-//	//$("#budgetval2").val(me);
-});
 	
-//function setBudget1() {
-//	alert("function was called!");
-	//var two = $("#budgetval2").val();
+function setBudget1() {
+	alert("function was called!");
+	var two = document.getElementById.value;
+	alert(two);
 	//var two = getElementsByName("budgetval2")[0];
 //	$("#budgetval1").val("900");
 	//one.value(two.value);
-//}
+}
 
 //function setBudget2() {
 //	var one = $("#budgetval1").val();

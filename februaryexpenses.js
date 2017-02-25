@@ -9,8 +9,9 @@ function changeBudget() {
 }
 
 $("#budgetval1").change(function() {
-	var me = ($this).val();
-	$("#budgetval2").val(me);
+	alert('function was called!');
+	//var me = ($this).val();
+	//$("#budgetval2").val(me);
 }
 	
 //function setBudget1() {

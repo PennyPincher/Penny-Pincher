@@ -11,7 +11,7 @@ var monthlytotal = document.getElementById("monthlytotal");
 function setBudget1() {
 	var two = document.getElementById("budgetval2").value;
 	document.getElementById("budgetval1").value = two;
-	//alert(two);
+	alert("Budget Set!");
 	//var two = getElementsByName("budgetval2")[0];
 //	$("#budgetval1").val("900");
 	//one.value(two.value);
@@ -20,6 +20,7 @@ function setBudget1() {
 function setBudget2() {
 	var one = document.getElementById("budgetval1").value;
 	document.getElementById("budgetval2").value = one;
+	alert("Budget Set!");
 	//var one = getElementsByName("budgetval1")[0];
 //	$("#budgetval2").val(one);
 	//two.value(one.value);

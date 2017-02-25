@@ -8,6 +8,18 @@ function changeBudget() {
 	budgetval.innerHTML = x;
 }
 
+function setBudget1() {
+	var two = getElementsByName("budgetval2")[0];
+	var one = getElementsByName("budgetval1")[0];
+	one.value(two.value);
+}
+
+function setBudget2() {
+	var one = getElementsByName("budgetval1")[0];	
+	var two = getElementsByName("budgetval2")[0];
+	two.value(one.value);
+}
+
 function setTotalSpending() {	
 
 	var sum = 0;

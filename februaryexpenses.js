@@ -9,20 +9,21 @@ var monthlytotal = document.getElementById("monthlytotal");
 //}
 	
 function setBudget1() {
-	alert("function was called!");
-	var two = document.getElementById("budgetval1").value;
-	alert(two);
+	var two = document.getElementById("budgetval2");
+	document.getElementById("budgetval1").value = two;
+	//alert(two);
 	//var two = getElementsByName("budgetval2")[0];
 //	$("#budgetval1").val("900");
 	//one.value(two.value);
 }
 
-//function setBudget2() {
-//	var one = $("#budgetval1").val();
+function setBudget2() {
+	var one = document.getElementById("budgetval1");
+	document.getElementById("budgetval2").value = one;
 	//var one = getElementsByName("budgetval1")[0];
 //	$("#budgetval2").val(one);
 	//two.value(one.value);
-//}
+}
 
 function setTotalSpending() {	
 

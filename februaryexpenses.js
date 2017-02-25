@@ -8,19 +8,24 @@ function changeBudget() {
 	budgetval.innerHTML = x;
 }
 
-function setBudget1() {
+$("#budgetval1").change(function() {
+	var me = $(this).val();
+	$("#budgetval2").val(me);
+}
+	
+//function setBudget1() {
 	//var two = $("#budgetval2").val();
 	//var two = getElementsByName("budgetval2")[0];
-	$("#budgetval1").val("900");
+//	$("#budgetval1").val("900");
 	//one.value(two.value);
-}
+//}
 
-function setBudget2() {
-	var one = $("#budgetval1").val();
+//function setBudget2() {
+//	var one = $("#budgetval1").val();
 	//var one = getElementsByName("budgetval1")[0];
-	$("#budgetval2").val(one);
+//	$("#budgetval2").val(one);
 	//two.value(one.value);
-}
+//}
 
 function setTotalSpending() {	
 

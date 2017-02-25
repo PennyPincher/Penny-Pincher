@@ -10,7 +10,7 @@ var monthlytotal = document.getElementById("monthlytotal");
 	
 function setBudget1() {
 	alert("function was called!");
-	var two = document.getElementById.value;
+	var two = document.getElementById("budgetval1").value;
 	alert(two);
 	//var two = getElementsByName("budgetval2")[0];
 //	$("#budgetval1").val("900");

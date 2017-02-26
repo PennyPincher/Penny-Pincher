@@ -295,6 +295,10 @@ font-size: 20px;
 
 /**left budget setting button**/
 
+#foot{		
+vertical-align:top;		
+}
+	
 #left{
   float: left;
 
@@ -310,13 +314,19 @@ font-size: 20px;
 
 #bleft{
 	background: #94bcb8;
-	
+	margin-right: 80%;
 	border: none;
+	float: left;
 }
-#bright{
-	background: #94bcb8;
 	
+#budgetval1{		
+	width: 5%;		
+}
+	
+#bright{
+	float: right;
 	border: none;
+	display:inline;
 }
 /**right monthly total button**/
 

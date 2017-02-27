@@ -118,17 +118,17 @@
 			<a href="#home" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-home ui-btn-icon-left">Home</a><h1>History</h1>
 			<a href="#chart" class="ui-btn ui-shadow ui-corner-all ui-icon-calendar ui-btn-icon-right">Analysis</a>
 		</div>
-		<div data-role="header" data-position="inline">
+	<!--	<div data-role="header" data-position="inline">
 				<p><br></p>
 			<!--	<button id="bleft">
 					Budget Setting
 					<img id = "pencil" src="http://www.pngmart.com/files/1/Green-Pencil-Icon-PNG.png" alt="pencil">
-				</button>	-->
+				</button>	
 			 	<p style="text-align:center;">
 					Budget<br>
 				</p>			
 				<input type="number" name="budgetval2" id="budgetval2" value="100.00" min="0" step="0.01" onchange="setBudget1();" >	 							
-			<!-- </div> -->
+			<!-- </div> 
 				<p></p>
 				<button id="bright" style="height:45px;vertical-align:middle;"> Monthly Total: $180.00
 					
@@ -136,9 +136,9 @@
 			<!-- <p style="text-align:center;">
 					Monthly Total<br>
 				</p>
-				<p id="monthlytotal"></p> -->
-			<!-- </div> -->
-		</div>
+				<p id="monthlytotal"></p> 
+			<!-- </div> 
+		</div> -->
 		<div data-role="content" data-theme="a">
 			<div class="center-wrapper">
 		<!-- 	<a href="#myModal" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-edit ui-btn-icon-notext" onclick = "getValuesOne2();setID('one');">
@@ -271,6 +271,18 @@
 			</tr> 				
 			</tbody>
 			</table>
+				<!-- Fixed footer for budget, added by Sara -->
+	<div data-role="footer" id=="foot" data-position="fixed" style="background: #6FAEC3;">	
+
+		<div data-role="fieldcontain" style="width:20%; float:left;">
+			<label for="budge">Budget: </label>
+			<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="1.0" size="100" onchange="setBudget2();" >
+
+		</div>  	
+		<div id="bright" style="clear: right; height:45px;align:right; padding-top: 2%; margin-right: 2%;"> Monthly Total: $180.00
+		</div> 	
+	
+	</div>
 			
 <!-- 			<table data-role="table" class="ui-responsive ui-shadow" id="table2">
 			<thead>
@@ -326,18 +338,7 @@
 	
 	</div>
 
-	<!-- Fixed footer for budget, added by Sara -->
-	<div data-role="footer" id=="foot" data-position="fixed" style="background: #6FAEC3;">	
 
-		<div data-role="fieldcontain" style="width:20%; float:left;">
-			<label for="budge">Budget: </label>
-			<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="1.0" size="100" onchange="setBudget2();" >
-
-		</div>  	
-		<div id="bright" style="clear: right; height:45px;align:right; padding-top: 2%; margin-right: 2%;"> Monthly Total: $180.00
-		</div> 	
-	
-	</div>
 		
 		
 	<div data-role="page" data-theme="a" id="chart">

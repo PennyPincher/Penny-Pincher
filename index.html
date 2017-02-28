@@ -101,15 +101,15 @@
 		
 			<!-- Fixed footer for budget, added by Sara -->
 			<div data-role="footer" id="foot" data-position="fixed" style="background: #6FAEC3;">	
-
-				<div data-role="fieldcontain" style="width:20%; float:left;">
-					<label for="budge">Budget: $</label>
+				<h2 style="float:left;padding-left:1em;padding-top:1em;">Budget: $</h2>
+				<div style="width:20em; float:left; display:inline;margin-right:-204px; ">
 					<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="1.0" size="100" onchange="setBudget2();" >
 
 				</div>  	
-				<div id="bright" style="clear: right; height:45px;align:right; padding-top: 2%; margin-right: 2%;"> 
+				<div id="bright" style="clear: right; height:45px; padding-top: 1em; margin-right: 2em;"> 
 					Monthly Total: $180.00
 				</div> 	
+				
 
 			</div>
 		</div>
@@ -285,15 +285,18 @@
 			</tbody>
 			</table>
 				<!-- Fixed footer for budget, added by Sara -->
-	<div data-role="footer" data-position="fixed" style="background: #6FAEC3;">	
+			<div data-role="footer" id="foot" data-position="fixed" style="background: #6FAEC3;">	
+				<h2 style="float:left;padding-left:1em;padding-top:1em;">Budget: $</h2>
+				<div style="width:20em; float:left; display:inline;margin-right:-204px; ">
+					<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="1.0" size="100" onchange="setBudget2();" >
 
-			<div class="ui-grid-a">
-			<div class="ui-block-a">
-			<span class="ui-field-contain"><label for="budgetval"><h4>Budget</h4></label><input type="number" value="100.00" min="0" step="1.0" onchange="setBudget2();" data-mini="true"/></span></div>
-			<div class="ui-block-b"><span class="ui-field-contain">Monthly Total: $180.00</span></div>
-		</div>	
-	
-	</div>
+				</div>  	
+				<div id="bright" style="clear: right; height:45px; padding-top: 1em; margin-right: 2em;"> 
+					Monthly Total: $180.00
+				</div> 	
+				
+
+			</div>
 			
 <!-- 			<table data-role="table" class="ui-responsive ui-shadow" id="table2">
 			<thead>

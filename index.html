@@ -101,15 +101,19 @@
 			</div> 
 		
 			<!-- Fixed footer for budget, added by Sara -->
-			<div data-role="footer" id="foot" data-position="fixed" style="background: #6FAEC3;">	
+			<div data-role="footer" id="foot" data-position="fixed" style="background: #6FAEC3;" onload="setTotalSpending();">	
 				<h2 style="float:left;padding-left:1em;padding-top:1em;">Budget: $</h2>
 				<div style="width:20em; float:left; display:inline;margin-right:-204px; ">
-					<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="1.0" size="100" onchange="setBudget2();" >
+					<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="1.0" size="100" onchange="setBudget2(); setTotalSpending();" >
 
 				</div>  	
-				<div id="bright" style="clear: right; height:45px; padding-top: 1em; margin-right: 2em;"> 
-					Monthly Total: $180.00
-				</div> 	
+				<h2 id="bright" style="clear: right; height:45px; padding-top: 1em; margin-right: 2em;"> 
+					Monthly Total: 
+					<div class="monthlytotal" style="display: inline;">
+				
+					</div>
+				</h2> 	
+				
 				
 
 			</div>
@@ -278,39 +282,22 @@
 			</tbody>
 			</table>
 				<!-- Fixed footer for budget, added by Sara -->
-			<div data-role="footer" id="foot" data-position="fixed" style="background: #6FAEC3;">	
+			<div data-role="footer" id="foot" data-position="fixed" style="background: #6FAEC3;" onload="setTotalSpending();">	
 				<h2 style="float:left;padding-left:1em;padding-top:1em;">Budget: $</h2>
 				<div style="width:20em; float:left; display:inline;margin-right:-204px; ">
 					<input type="number" name="budgetval1" id="budgetval1" value="100.00" min="0" step="1.0" size="100" onchange="setBudget2();" >
-
 				</div>  	
-				<div id="bright" style="clear: right; height:45px; padding-top: 1em; margin-right: 2em;"> 
-					Monthly Total: $180.00
-				</div> 	
+				<h2 id="bright" style="clear: right; height:45px; padding-top: 1em; margin-right: 2em;"> 
+					Monthly Total: 
+					<div id="monthlytotal" class="monthlytotal" style="display: inline;">
+				
+					</div>
+				</h2>	
 				
 
 			</div>
 			
-<!-- 			<table data-role="table" class="ui-responsive ui-shadow" id="table2">
-			<thead>
-				<tr>
-					<td id="mbud">
-						Monthly<br>Budget
-					</td>				
-					<td> 
-					<div class="ui-field-contain">
-					<label for="budgetval">$</label>
-						<input type="number" name="budgetval" id="budgetval" value="100.00" min="0" step="0.01" oninput="checkBudget();">					
-					</td>
-					</div>
-					<td id="mtot">
-						Monthly<br>Total
-					</td>
-					<td id="monthlytotal">
-					</td>
-				</tr>
-				</thead>
-			</table> -->
+<!-- 			
 			<!-- Making a Modal Box -->
 			<div id="myModal" data-overlay-theme="a" data-theme="a" data-role="popup" data-dismissible="true" style="min-width:250px;">
 			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
@@ -332,7 +319,6 @@
 					</div>
 					</form>
 					<a href="#expenses" class="ui-btn ui-corner-all ui-shadow" data-role="button" onclick="changeValues2(); setTotalSpending();">Submit</a>
-					<!-- <input type="submit" class="ui-btn ui-corner-all ui-shadow" name="done" value="Submit" onclick="changeValues(); setTotalSpending();">	 -->
 					<div data-role="footer"data-theme="a">
 						
 					</div>

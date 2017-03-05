@@ -1,58 +1,57 @@
 var editbudget = document.getElementById("editbudget");
 var numel = 5;
 var monthlytotal = document.getElementById("monthlytotal");
-//var budgetval = document.getElementById("budgetval");
+var budgetval = document.getElementById("budgetval1");
 
-//function changeBudget() {
-//	var x = budgetval.value;
-//	budgetval.innerHTML = x;
-//}
+function changeBudget() {
+	var x = budgetval.value;
+	budgetval.innerHTML = x;
+}
 	
 function setBudget1() {
 	var two = document.getElementById("budgetval2").value;
 	document.getElementById("budgetval1").value = two;
 	alert("Budget Set!");
-	//var two = getElementsByName("budgetval2")[0];
-//	$("#budgetval1").val("900");
-	//one.value(two.value);
 }
 
 function setBudget2() {
 	var one = document.getElementById("budgetval1").value;
 	document.getElementById("budgetval2").value = one;
 	alert("Budget Set!");
-	//var one = getElementsByName("budgetval1")[0];
-//	$("#budgetval2").val(one);
-	//two.value(one.value);
 }
 
 function setTotalSpending() {	
-
 	var sum = 0;
 	// iterate through each td based on class and add the values
 	$(".money").each(function() {
 		var value = $(this).html();
 		// add only if the value is number
-		if(!isNaN(value) && value.length != 0) {
+		//n = 
+		if(value.length != 0) {	
+			value = value.substring(1,(value.length));				
 			sum += parseFloat(value);
 		}
 	});
 		
 	var roundedSum = Math.round(sum * 100) / 100;
-	monthlytotal.innerHTML = String(roundedSum);
-	checkBudget(); 
+	$(".monthlytotal").each(function() {
+		$(this).html('$' + String(roundedSum));
+	});
+	//checkBudget(); 
 }
 
 function checkBudget() {
-//	var budget = budgetval.value;
-//	var unroundedtotal = parseFloat(monthlytotal.innerHTML);
-//	var total = Math.round(unroundedtotal * 100) / 100;
-//	if (total > budget) {
-//		monthlytotal.style.color = 'red';
-//	}
-//	else {
-//		monthlytotal.style.color = 'green';
-//	}
+	var budget = budgetval.value;
+	var unroundedtotal = parseFloat(monthlytotal.innerHTML);
+	var total = Math.round(unroundedtotal * 100) / 100;
+	$(".monthlytotal").each(function() {
+		if (total > budget) {
+			$(this).css({'color' : 'red'});
+		}
+		else {
+			$(this).css({'color' : 'green'});
+		}
+	}
 }
 
 
@@ -183,7 +182,7 @@ function changeValues() {
 		var newdate = date.value;
 		$("#one.date").html(newdate);
 		var cost = document.getElementById('costinput');
-		var newcost = cost.value;
+		var newcost = '$' + cost.value;
 		$("#one.money").html(newcost);
 		var loc = document.getElementById('locinput');
 		var newloc = loc.value;

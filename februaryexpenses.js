@@ -44,14 +44,14 @@ function checkBudget() {
 	var budget = budgetval.value;
 	var unroundedtotal = parseFloat(monthlytotal.innerHTML);
 	var total = Math.round(unroundedtotal * 100) / 100;
-	$(".monthlytotal").each(function() {
-		if (total > budget) {
-			$(this).css({'color' : 'red'});
-		}
-		else {
-			$(this).css({'color' : 'green'});
-		}
-	}
+	//$(".monthlytotal").each(function() {
+	//	if (total > budget) {
+	//		$(this).css({'color' : 'red'});
+	//	}
+	//	else {
+	//		$(this).css({'color' : 'green'});
+	//	}
+	//}
 }
 
 
